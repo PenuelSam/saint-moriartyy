@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Monument Extended"),
+      url("https://fonts.cdnfonts.com/s/19595/MonumentExtended-Regular.woff")
+        format("woff");
+  }
+  @font-face {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Monument Extended"),
+      url("https://fonts.cdnfonts.com/s/19595/MonumentExtended-Ultrabold.woff")
+        format("woff");
+  }
+  @font-face {
+    font-family: "Neutral Face";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Neutral Face"),
+      url("../fonts/neutralface-webfont.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Neutral Face";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Neutral Face"),
+      url("../fonts/neutralface-bold-webfont.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'FuturaBT-LightItalic';
+    src: url('../src/assets/transfonter.org-20231007-024951/FuturaBT-LightItalic.woff2') format('woff2'),
+         url('../src/assets/transfonter.org-20231007-024951/FuturaBT-Light.woff') format('woff');
+    font-weight: normal;
+  }
+
+  
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.navbar-Container{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer-Container{
+  max-width: 1200px;
+  height: 100%;
+  gap: 100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.check-container{
+
+  height: 100%;
+  margin: auto;
+}
+
+.btn {
+  /* Base button styles */
+  color: white; /* Text color for the button */
+  
+  border: none; /* Remove default button border */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /*background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);*/
+  cursor: pointer; /* Change cursor to indicate interactivity */
+  width: 160px;
+  height: 40px;
+
+}
+
+.btn:hover{
+  animation: metal 1s ease-in-out forwards ;
+  width: 160px;
+}
+
+
+
+@keyframes metal {
+  0% {
+    background: rgba(255, 255, 255, 0.2);
+    width: 0;
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.2);
+  width: 100px;
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.2);
+  width: 160px;
+  }
+
+}
+/*@keyframes metal2 {
+  0% {
+    background: rgba(255, 255, 255, 0.2);
+    width: 0px;
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.2);
+  width: 100px;
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.2);
+  width: 50px;
+  }
+
+}*/
+
+
+/* Hover effect (optional) */
+
+
+.span{
+  opacity: 0;
+}
+
+.card:hover .span{
+  opacity: 1;
+}
+
+.desc{
+  opacity: 0;
+}
+
+.card:hover .desc{
+  opacity: 1;
+}
