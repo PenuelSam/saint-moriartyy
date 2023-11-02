@@ -10,6 +10,8 @@ import Sustainability from "./pages/Sustainability"
 import ShopDetail from "./pages/ShopDetail"
 import Cart from "./components/Cart"
 import Checkout from "./pages/Checkout"
+import Login from "./pages/Login"
+import Register from "./pages/Register"
 
 const App = () => {
   return (
@@ -26,6 +28,8 @@ const App = () => {
           <Route path="/sustainability" element={<Sustainability />} />
           <Route path="/product/:id" element={<ShopDetail />} />
           <Route path="/checkout" element={<Checkout />}/>
+          <Route path="/login" element={<Login />}/>
+          <Route path="/register" element={<Register />}/>
         </Routes>
         <div className="w-[100vw] h-[0.6px] bg-white"></div>
         <Footer />

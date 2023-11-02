@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/Star-icon.png'
 import { useDispatch, useSelector } from 'react-redux'
 import { selectTotalQuantity, setOpenCart } from '../app/CartSlice'
+import PersonIcon from '@mui/icons-material/Person';
 const Navbar = () => {
     const TotalQty = useSelector(selectTotalQuantity)
     const dispatch = useDispatch()
@@ -27,9 +28,9 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="flex">
-            <ul className="flex list-none">
+            <ul className="flex items-center list-none">
+               <Link to="/login" className='mx-3'><PersonIcon /></Link>
                 <li className="font-futura px-3 font-200 tracking-[1.5px]"><Link to='/about'>About Us</Link></li>
-                <li className="font-futura px-3 font-200 tracking-[1.5px]"><Link to='sustainability'>Sustainability</Link></li>
             </ul>
             <div>
                 <p className="font-futura px-3 font-200 tracking-[1.5px]" onClick={onToggleCart}><Link>Cart({TotalQty})</Link></p>
