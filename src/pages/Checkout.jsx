@@ -23,7 +23,7 @@ const Checkout = () => {
       };*/
 
   return (
-    <div className="check-container w-full flex sm:flex-col-reverse gap-10 justify-between">
+    <div className=" pt-[100px] check-container w-full text-white flex sm:flex-col-reverse gap-10 justify-between">
       <div className="flex-1 pl-[100px] sm:pl-0 sm:mx-5 sm:py-0   py-10" >
         <h1 className="text-[30px] py-3">Delivery</h1>
         <form action="" className="w-full flex flex-col gap-10">

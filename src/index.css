@@ -45,18 +45,39 @@
 @tailwind utilities;
 
 
+/* Webkit scrollbar styling */
+/* Track */
+::-webkit-scrollbar {
+  width: 5px; /* Adjust the width as needed */
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  background: black; /* Change the color as per your design */
+  border-radius: 6px; /* Round the edges */
+}
+
+/* Track background */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Change to your preferred color */
+}
 
 body{
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  @apply bg-black 
+}
+
+.Ulstyle{
+  visibility: hidden;
 }
 
 .navbar-Container{
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between ;
   align-items: center;
   padding: 20px 0;
 }
@@ -89,13 +110,14 @@ body{
   cursor: pointer; /* Change cursor to indicate interactivity */
   width: 160px;
   height: 40px;
+  
 
 }
 
-.btn:hover{
+/*.btn:hover{
   animation: metal 1s ease-in-out forwards ;
   width: 160px;
-}
+}*/
 
 
 

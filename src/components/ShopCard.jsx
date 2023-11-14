@@ -11,7 +11,7 @@ const ShopCard = () => {
     setSelectedImageId(id);
   };
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-1 cursor-pointer">
+    <div className="grid grid-cols-2  sm:grid-cols-1 cursor-pointer">
         {Shop.map(({id,color, img, name, price, stock}) => (
             <>
             <Link to={`/product/${id}`} onClick={() => handleImageClick(id)}>
